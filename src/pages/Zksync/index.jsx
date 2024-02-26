@@ -750,42 +750,42 @@ function Zksync() {
             render: (text, record, index) => index + 1,
             width: 40,
         },
-        {
-            title: "备注",
-            dataIndex: "name",
-            key: "name",
-            align: "center",
-            render: (text, record) => {
-                const isEditing = record.key === editingKey;
-                return isEditing ? (
-                    <Input
-                        placeholder="请输入备注"
-                        defaultValue={text}
-                        onPressEnter={(e) => {
-                            record.name = e.target.value;
-                            setData([...data]);
-                            localStorage.setItem('addresses', JSON.stringify(data));
-                            setEditingKey(null);
-                        }}
-                    />
-                ) : (
-                    <>
-                        <Tag color="blue" onClick={() => setEditingKey(record.key)}>
-                            {text}
-                            </Tag>
-                            {!text && (
-                            <Button
-                                shape="circle"
-                                icon={<EditOutlined />}
-                                size="small"
-                                onClick={() => setEditingKey(record.key)}
-                            />
-                        )}
-                    </>
-                );
-            },
-            width: 75
-        },
+        // {
+        //     title: "备注",
+        //     dataIndex: "name",
+        //     key: "name",
+        //     align: "center",
+        //     render: (text, record) => {
+        //         const isEditing = record.key === editingKey;
+        //         return isEditing ? (
+        //             <Input
+        //                 placeholder="请输入备注"
+        //                 defaultValue={text}
+        //                 onPressEnter={(e) => {
+        //                     record.name = e.target.value;
+        //                     setData([...data]);
+        //                     localStorage.setItem('addresses', JSON.stringify(data));
+        //                     setEditingKey(null);
+        //                 }}
+        //             />
+        //         ) : (
+        //             <>
+        //                 <Tag color="blue" onClick={() => setEditingKey(record.key)}>
+        //                     {text}
+        //                     </Tag>
+        //                     {!text && (
+        //                     <Button
+        //                         shape="circle"
+        //                         icon={<EditOutlined />}
+        //                         size="small"
+        //                         onClick={() => setEditingKey(record.key)}
+        //                     />
+        //                 )}
+        //             </>
+        //         );
+        //     },
+        //     width: 75
+        // },
         {
             title: (
                 <span>
