@@ -800,7 +800,7 @@ function Zksync() {
             align: "center",
             render: (text, record) => {
                 if (hideColumn) {
-                    return '***';
+                    return text.substring(0, 4)+'***'+text.substring(text.length - 4);
                   }
                 return isRowSatisfyCondition(record) ?
                     <div
