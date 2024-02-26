@@ -1231,9 +1231,9 @@ function Zksync() {
                         <Form.Item label="地址" name="address" rules={[{required: true}]}>
                             <Input placeholder="请输入地址"/>
                         </Form.Item>
-                        <Form.Item label="备注" name="name">
+{/*                         <Form.Item label="备注" name="name">
                             <Input placeholder="请输入备注"/>
-                        </Form.Item>
+                        </Form.Item> */}
                     </Form>
                 </Modal>
                 <Modal title="zkSync"
