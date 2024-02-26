@@ -1,7 +1,5 @@
 # MyWalletScan  
 
-> 基于https://github.com/wxtsky/MyWalletScan 修改
-
 ## 关于
 
 一款方便查看管理地址的工具
@@ -27,7 +25,7 @@ npm run dev
 
 ## 使用
 
-https://airdrop.dddd8.xyz/
+https://wallet.fastbull.io/
 
 
 
